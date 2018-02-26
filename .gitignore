@@ -1,0 +1,8 @@
+# Python virtualenv files
+/bin
+/lib
+/include
+pip-selfcheck.json
+
+config.yml
+.DS_Store
