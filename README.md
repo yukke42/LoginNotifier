@@ -23,3 +23,13 @@ webhook_url: https://hooks.slack.com/services/xxxx
 
 と設定する。
 
+また、特定IPからのアクセスの際に通知したくない場合には
+
+```
+# config.yml
+ignore_ip_list:
+  - xxx.xxx.xxx.xxx
+  - yyy.yyy.yyy.yyy
+```
+
+を設定する。
