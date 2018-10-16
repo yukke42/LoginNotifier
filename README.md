@@ -7,11 +7,8 @@
 
 環境設定
 ```
-$ virtualenv .
-$ source bin/activate
-$ pip install -r requirements.txt
-$ sudo sh -c "echo 'cd $PWD && bin/python notify.py \$USER \$SSH_CLIENT' > /etc/ssh/sshrc"
-$ deactivate
+$ pipenv install
+$ sudo sh -c "echo 'cd $PWD && .venv/bin/python notify.py \$USER \$SSH_CLIENT' >> /etc/ssh/sshrc"
 ```
 
 [https://slack.com/services/new/incoming-webhook](https://slack.com/services/new/incoming-webhook) から Webhook URL を取得し
