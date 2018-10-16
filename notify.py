@@ -1,4 +1,3 @@
-import argparse
 import json
 import sys
 
@@ -27,10 +26,10 @@ def notify():
 
     data = {
         'username':
-        'LoginNotifier',
+            'LoginNotifier',
         'text':
-        '<!channel> {} から {} に ユーザー {} でログインしました！'.format(
-            client_ip, host_ip, user)
+            '<!channel> {} から {} に ユーザー {} でログインしました！'.format(
+                client_ip, host_ip, user)
     }
     requests.post(WEBHOOK_URL, data=json.dumps(data))
 
